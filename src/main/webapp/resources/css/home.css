@@ -1,0 +1,38 @@
+/****************************************************************************/
+
+.registration-container
+{
+    float: right;
+    width: 250px;
+}
+.registration-container:before
+{
+    content: 'Register';
+    width: 250px;
+    height: 60px;
+    background: #3aa9d2;
+    float: left;
+    text-align: center;
+    line-height: 60px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.registration-container input, .registration-container select
+{
+    padding: 5px;
+    width: 235px;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************/

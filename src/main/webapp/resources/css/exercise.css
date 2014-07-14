@@ -1,0 +1,184 @@
+@CHARSET "ISO-8859-1";
+
+.width-100-perc{width: 100%;}
+.width-25-perc{width: 25%;}
+
+
+/* ********************************************************************************************* */
+
+.ans-unattempted, .ans-correct, .ans-incorrect, .ans-marked
+{
+	padding: 10px;
+	background: #f4f4f4;
+	border : 1px solid #ddd;
+	margin: 1px;
+	cursor: pointer;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.ans-correct{background: rgb(194, 255, 194);cursor: default;}
+.ans-incorrect{background: rgb(255, 204, 199);cursor: default;}
+.ans-marked{background: #C7DAFD;cursor: default;}
+
+.di-line{padding-bottom: 2em;}
+.content .ques-set-direc img { max-width: 300px;}
+.content .ques-set-direc img:hover{ max-width: none; position: absolute;clear: both;}
+.content-fullscreen .ques-set-direc img{max-width: 450px;}
+.content-fullscreen .ques-set-direc img:hover{ max-width: none; position: absolute;clear: both;}
+
+.ques-set-direc{border-right: 1px dashed;}
+.ques-set{ height: 600px;overflow: auto;}
+
+
+/* *****************************************************************************************8 */
+ 
+.option
+{
+	background: white;
+	padding: 15px 10px;
+	color: black;
+	font-size: 16px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #99dbfa;
+	width: 50%;
+}
+
+.solution-show
+{
+	height: 21px;
+	overflow: hidden;
+}
+.solution-hide
+{
+	
+}
+
+.solution-head
+{
+	border: none;
+	margin-right: 10px;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: bold;
+	margin-right: 10px;
+	height: 21px;
+}
+.solution-show .solution-head:AFTER
+{
+	width: 100%;
+	height: 21px;
+	content: 'Show Solution';
+	background: url("/images/main/max-min.png") no-repeat 0 0 #fff;
+	padding-left: 25px;
+}
+.solution-hide .solution-head:AFTER
+{
+	width: 100%;
+	height: 21px;
+	content: 'Hide Solution';
+	background: url("/images/main/max-min.png") no-repeat 0px -21px;
+	padding-left: 25px;
+}
+.solution-hide .solution
+{
+	border: 1px dashed rgba(123, 123, 123, 0.28);
+	background: rgba(223, 223, 223, 0.28);
+	clear: both;
+	margin-top: 1em;
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+/* ************************************   OLD CSS FOR TOGGLESOLUTION   ********************************************************* */
+
+.ans-display
+{	
+	display: block;
+	border: 1px dashed rgba(123, 123, 123, 0.28);
+	background: rgba(223, 223, 223, 0.28);
+	clear: both;
+}
+
+.ans-show
+{
+	background: url("/images/main/max-min.png") no-repeat 0 0 #fff;
+	height: 21px;
+	border: none;
+	margin-right: 10px;
+	cursor: pointer;
+	padding-left: 25px;
+	font-size: 15px;
+	font-weight: bold;
+}
+.ans-hide
+{
+	background: url("/images/main/max-min.png") no-repeat 0px -21px;
+	height: 21px;
+	border: none;
+	margin-right: 10px;
+	cursor: pointer;
+	padding-left: 25px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.question-container
+{
+	width: 100%;
+}
+
+.question {
+	background: white;
+	padding: 15px 10px;
+	color: black;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 16px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #99dbfa;
+	width: 100%;
+}
+
+
+.correct , .incorrect , .not-attempted
+{
+	float: left;
+	min-width: 100px;
+	border: thin ridge #5F9EA0;
+	height:35px;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: none;
+	margin-right: 5px;
+	background-color: white;
+	cursor: pointer;
+	padding: 0px 10px;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 7px;
+}
+.tabbed-panel-option-inactive
+{
+	height: 32px;
+	background-color: #DCDCDC;
+}
+.mock-result-container
+{
+	margin: 10px;
+	padding: 10px;
+	min-height: 500px;
+}
+.correct , .incorrect , .not-attempted{color: white;float: right;width: 150px;cursor: default;height: 32px;cursor: pointer;}
+.correct{ background: green;}
+.incorrect{background: red;}
+.not-attempted{background: blue;}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib> 
+<tlibversion>1.0</tlibversion>
+<jspversion>1.1</jspversion>
+<shortname>taglibs</shortname>
+<info>Resources Tag</info>
+<!-- <uri>http://viralpatel.net/blogs/jsp/taglib/substr</uri> -->
+<tag>
+    <name>resource</name>
+    <tagclass>ekjam.cat.taglibs.ResourceTaglib</tagclass>
+    <info>Resource Locator for css, images and js</info>
+    <attribute>
+      <name>type</name>
+      <required>true</required>
+  </attribute>
+    <attribute>
+      <name>file</name>
+      <required>true</required>
+  </attribute>
+    <!-- <attribute>
+      <name>dir</name>
+      <required>true</required>
+  </attribute> -->
+</tag>
+</taglib> 

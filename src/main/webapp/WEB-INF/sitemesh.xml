@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+	<mapping path="/studyRoom/**" decorator="/layouts/studyRoom.jsp" />
+	<mapping path="/user/**" decorator="/layouts/user.jsp" />
+	<mapping path="/admin/institute/**" decorator="/layouts/superAdmin.jsp" />
+	<mapping path="/admin/moderator/**" decorator="/layouts/superAdmin.jsp" />
+	<mapping path="/admin/super/**" decorator="/layouts/superAdmin.jsp" />
+	<mapping path="/*" decorator="/layouts/default.jsp" />
+</sitemesh>
